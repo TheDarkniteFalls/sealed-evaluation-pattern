@@ -1,0 +1,1 @@
+The station recorded a pressure drop, but the next reading is still required.

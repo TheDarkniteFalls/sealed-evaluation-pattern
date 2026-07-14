@@ -1,0 +1,1 @@
+Synthetic field-note style: state one observation, one uncertainty, and one next check.

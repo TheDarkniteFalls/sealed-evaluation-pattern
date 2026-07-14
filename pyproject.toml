@@ -1,0 +1,9 @@
+[project]
+name = "sealed-evaluation-pattern"
+version = "0.1.0"
+description = "A dependency-free checker for sealed evaluation records"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+[tool.pyright]
+pythonVersion = "3.10"

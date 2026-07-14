@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "weather-note-unretired-gold",
+  "sources": [
+    {
+      "id": "learning.field-note-guide",
+      "zone": "learning",
+      "path": "sources/learning-guide.txt",
+      "sha256": "ae55d262516502907fae61b6aebefda52b3c6f326be28781e58097fa5db5b6a4"
+    },
+    {
+      "id": "calibration.reference-note",
+      "zone": "calibration",
+      "path": "sources/calibration-gold.txt",
+      "sha256": "97d401a648b4aed5b6b2381e8ab902d56ebd4523945404e215cdad8af598e779"
+    },
+    {
+      "id": "sealed.future-note",
+      "zone": "sealed",
+      "path": "sources/sealed-holdout.txt",
+      "sha256": "16e05bcb407052996f5b74bd5a74f9e093d130d6b0e21a98e7874605cfba1bb3"
+    }
+  ],
+  "authorized_input_ids": ["learning.field-note-guide"],
+  "calibration_target_id": "calibration.reference-note",
+  "generated_output": {
+    "path": "sources/generated-output.txt",
+    "sha256": "8a10763ae31e705a3b96c324eba99732e4412c781075bceacd5ab087278c9231"
+  },
+  "events": [
+    {"type": "source_access", "source_id": "learning.field-note-guide", "at": "2026-01-01T10:00:00Z"},
+    {"type": "output_frozen", "at": "2026-01-01T10:05:00Z"},
+    {"type": "pre_reveal_review", "at": "2026-01-01T10:06:00Z"},
+    {"type": "source_revealed", "source_id": "calibration.reference-note", "at": "2026-01-01T10:10:00Z"},
+    {"type": "source_access", "source_id": "calibration.reference-note", "at": "2026-01-01T10:11:00Z"}
+  ],
+  "retired_source_ids": [],
+  "contamination_detected": false
+}
