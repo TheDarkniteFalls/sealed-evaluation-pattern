@@ -1,5 +1,17 @@
 # Sealed Evaluation Pattern
 
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Experimental pattern · about 10 min · Python 3 · no model · no network
+>
+> **Operation:** Read-only check; examples may use temporary files
+>
+> **A pass establishes:** The supplied record preserves the declared information zones, freeze order, digests, and retirement rule.
+>
+> **It does not establish:** The checker is not a sandbox and cannot prove an access log is complete or authentic.
+>
+> **First check:** `python3 -B sealed_eval.py --self-test`
+<!-- toolkit-trust-card:end -->
+
 A small, dependency-free checker for preserving an information boundary during
 evaluation against a scarce corpus.
 
